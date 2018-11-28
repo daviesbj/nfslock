@@ -1,0 +1,19 @@
+Package: nfslock
+Type: Package
+Title: File Locking Interoperable With Perl File::NFSLock
+Version: 0.1.0
+Author: Brian Davies
+Maintainer: Brian Davies <daviesbj@bp.com>
+Description: Allows multiple worker processes with no common parent or
+    arbiter to negotiate exclusive access to a file. Exploits the
+    fact that hard linking to a pre-existing file is atomic, even
+    under NFS. Designed to be interoperable with the File::NFSLock
+    package in Perl, so R and Perl programs can cooperate in this
+    way. Hoping to eventually add a Python version.
+License: None
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    magrittr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
